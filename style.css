@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {  
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    background-size: 600% 600%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 60px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 9px 8px 20px 0px #000;
+
+}
+
+.app {
+    transition: all 0.5s ease; /* smooth transition */
+}
+
+.app.big {
+    transform: scale(1.05); /* make it 5% bigger */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); /* bigger shadow */
+}
+
+
+
+.app h1{
+    font-size: 25px;
+    color: #000000;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: #000000;
+}
+
+.btn {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft gradient */
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 12px 20px;
+    margin: 12px 0;
+    text-align: left;
+    border-radius: 8px; /* Softer corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.btn:hover:not([disabled]) {
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Brighter on hover */
+    color: #fff;
+    transform: translateY(-2px); /* Slight "lift" on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 12px 20px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    transition: all 0.4s ease; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease forwards; /* Animation on show */
+}
+
+/* Hover effect */
+#next-btn:hover {
+    background: #5f6cfd;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for appear animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.correct{
+    background: #82ffb7;
+}
+
+.incorrect{
+    background: #ff8a8a;
+}
